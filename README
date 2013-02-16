@@ -1,0 +1,11 @@
+This is a JavaScript reimplementation of "Dickinson in a Box," a short Ruby
+script that managed to find its way into a number of university courses on
+digital poetics.
+
+Some assembly required: the anthology must be fetched separately (to avoid
+keeping a copy in the repository). Just run dickinson.sh to create
+dickinson.html, which can then be viewed in a browser without a server
+setup.
+
+--
+Daniel W. Steinbrook <dsteinbrook@gmail.com>

@@ -1,0 +1,12 @@
+<link rel="stylesheet" type="text/css" href="dickinson.css" />
+<script type="text/javascript" src="dickinson.js"></script>
+<script type="text/javascript">
+var emily = new Dickinson();
+var rewrite = function() {
+  document.getElementById("poem").innerHTML = emily.write().replace(/\n/gi, '<br/>');
+}
+</script>
+<body onload="rewrite();">
+  <a href="#" onclick="rewrite();" title="New poem">&#x27F3;</a>
+  <div id="poem"></div>
+</body>
