@@ -3,7 +3,8 @@
 <script type="text/javascript">
 var emily = new Dickinson();
 var rewrite = function() {
-  document.getElementById("poem").innerHTML = emily.write().replace(/\n/gi, '<br/>');
+  document.getElementById("poem").innerHTML = emily.poem.replace(/\n/gi, '<br/>');
+  emily.write();  // write next poem while we're reading this one
 }
 </script>
 <body onload="rewrite();">

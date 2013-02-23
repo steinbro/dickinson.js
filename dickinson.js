@@ -46,14 +46,14 @@ var Dickinson = function() {
       poem += line + word + '\n\n';
       line = '';
     }
-    poem = poem.replace(/"/gi, '');
+    this.poem = poem.replace(/"/gi, '');
   
-    return poem;
+    return this.poem;
   };
-  var poem = this.write();
+  this.poem = this.write();
   
   // generate title from last generated poem
   this.title = function() {
-    return poem.split('\n')[0].split(/\W+/).slice(-2)[0].toUpperCase() + '.';
+    return this.poem.split('\n')[0].split(/\W+/).slice(-2)[0].toUpperCase() + '.';
   };
 };
