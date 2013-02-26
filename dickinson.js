@@ -1,12 +1,10 @@
-var Dickinson = function() {
+var Dickinson = function(anthology) {
   // give arrays a method for picking a random element
   Array.prototype.random = function() {
     return this[Math.floor(Math.random() * this.length)]
   };
   
-  var text = document.getElementById("anthology").innerHTML;
-
-  var words = text.split(/[\s\n]/).filter(function(word) { 
+  var words = anthology.split(/[\s\n]/).filter(function(word) { 
     return word != '';
   });
   
