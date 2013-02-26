@@ -1,7 +1,7 @@
 <link rel="stylesheet" type="text/css" href="dickinson.css" />
 <script type="text/javascript" src="dickinson.js"></script>
 <script type="text/javascript">
-var emily = new Dickinson();
+var emily = new Dickinson(document.getElementById("anthology").innerHTML);
 var rewrite = function() {
   document.getElementById("poem").innerHTML = emily.poem.replace(/\n/gi, '<br/>');
   emily.write();  // write next poem while we're reading this one
